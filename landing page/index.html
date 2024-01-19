@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering | Your Restaurant Name</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Hamdan serves</h1>
+        <p>Delicious Food, Delivered to Your Doorstep</p>
+        <marquee>----------available 24/7----------</marquee>
+    </header>
+
+    <section id="menu">
+        
+        <div class="dish-card">
+            <img class="dish-image" src="mandi.jfif" alt="Dish 1">
+            <div class="dish-details">
+                <h2>arabic chicken mandi</h2>
+                <p>Mandi (Arabic: مندي) is a traditional dish that originated from Hadhramaut, Yemen. consisting mainly of meat and rice with a special blend of spices, cooked in a pit. It is popular and commonly consumed in most areas of the Arabian Peninsula, especially between the Yemeni people, and even considered a staple dish in many regions. It is also found in Egypt, the Levant, Turkey, Southeast Asia, and India.</p>
+            </div>
+        </div>
+
+        
+        <div class="dish-card">
+            <img class="dish-image" src="seekh.jpg" alt="Dish 2">
+            <div class="dish-details">
+                <h2>mutton seekh kebabs</h2>
+                <p>Seekh kebabs are soft and succulent, seasoned with various spices such as ginger, garlic, green chilli pepper, powdered chilli and garam masala, as well as lemon juice, cilantro and mint leaves. Sometimes extra fats are added to further enhance the flavor. Seekh kebabs are typically served with raita, salad, onion slices, lemon wedges or green chutney and eaten with naan breads or parathas </p>
+            </div>
+        </div>
+
+       
+        <div class="dish-card">
+            <img class="dish-image" src="bur.webp" alt="Dish 3">
+            <div class="dish-details">
+                <h2>chicken burger
+                </h2>
+                <p>A chicken burger makes for a quick midweek meal or weekend BBQ’s with friends! Crispy seasoned chicken breast, topped with mandatory melted cheese, piled onto soft rolls with onion, avocado, lettuce, tomato and garlic mayo</p>
+            </div>
+        </div>
+
+        <div class="dish-card">
+            <img class="dish-image" src="chola.jpg" alt="Dish 4">
+            <div class="dish-details">
+                <h2>chole bharture</h2>
+                <p>Chole bhature is a food dish popular in the Northern areas of the Indian subcontinent. It is a combination of chana masala (spicy white chickpeas) and bhatura/puri, a deep-fried bread made from maida</p>
+            </div>
+        </div>
+
+        <div class="dish-card">
+            <img class="dish-image" src="dp.jpg" alt="Dish 5">
+            <div class="dish-details">
+                <h2>dahi puri</h2>
+                <p>Dahi puri is an Indian snack food which is especially popular in the state of Maharashtra. The dish is a type of chaat and originates from the city of Mumbai. It is served with mini-puri shells (golgappa), which are also used for the dish pani puri. Dahi puri and pani puri chaats are often sold by the same vendor
+                
+        </p>
+            </div>
+        </div>
+
+        <div class="dish-card">
+            <img class="dish-image" src="pt.jpg" alt="Dish 6">
+            <div class="dish-details">
+                <h2>paneer tikka masala</h2>
+                <p>Paneer Tikka Masala is a popular Indian curry where cubes of paneer (Indian cottage cheese), onions and peppers are marinated with yogurt and spices, grilled and then tossed in a creamy tomato based curry. This dish goes extremely well with butter naan or paratha or basmati rice.
+
+                </p>
+            </div>
+        </div>
+
+        <!-- Order processing and button -->
+        <div class="order-processing">
+            <div class="spinner"></div>
+            <p>Your order is being prepared. Please wait...</p>
+        </div>
+
+        <div class="order-button-container">
+            <a href="javascript:void(0);" onclick="processOrder()">Place Order</a>
+        </div>
+    </section>
+
+    <script>
+        function processOrder() {
+            // Simulate order processing (you can replace this with actual order processing logic)
+            document.querySelector('.order-processing').style.display = 'block';
+            setTimeout(() => {
+                document.querySelector('.order-processing').style.display = 'none';
+                alert('Order placed successfully!'); // You can replace this with your actual success handling logic
+            }, 3000); // Simulating a 3-second processing time
+        }
+    </script>
+    <footer>
+        <marquee> <p>&copy; 2024 MOHAMMAD ZAKI. All Rights Reserved.</p>
+          
+     </footer>
+ 
+
+</body>
+</html>
